@@ -1,56 +1,66 @@
 
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f9f6;
-  color: #1b3b2f;
-}
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  background-color: #f6fbf6;
+  color: #1d3b2a;
+  margin: 0;
 }
 header {
-  background-color: #2e7d5d;
-  padding: 15px 20px;
-  color: white;
+  background-color: #d9efe2;
+  padding: 15px;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-links {
+.menu ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
-.nav-links li a {
-  color: white;
+.menu a {
   text-decoration: none;
   font-weight: bold;
+  color: #145c43;
 }
-.ebook-cover, .mockup-img {
+.container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h1, h2 {
+  text-align: center;
+  color: #145c43;
+}
+p {
+  line-height: 1.7;
+}
+.imagem {
   width: 100%;
   border-radius: 12px;
   margin: 20px 0;
 }
-.cta-button {
+.botao {
   display: inline-block;
-  background: #2e7d5d;
+  background-color: #2a7b53;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 20px;
   text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
+}
+form {
+  background-color: #eef6f1;
+  padding: 20px;
   border-radius: 8px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 footer {
   text-align: center;
+  background-color: #d9efe2;
   padding: 20px;
-  background-color: #dfeee4;
-  color: #555;
   margin-top: 40px;
-}
-.product-block {
-  margin: 20px 0;
 }
