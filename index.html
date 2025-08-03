@@ -3,193 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Jônisson Santos | Farmácia Natural</title>
+  <title>Farmácia Natural - Dr. Jônisson Santos</title>
   <style>
-    :root {
-      --verde-escuro: #1b3b2f;
-      --verde-claro: #e3f3e8;
-      --verde-medio: #2a7b53;
-      --cinza-claro: #f5f9f4;
-      --branco: #ffffff;
-    }
-    * {
-      box-sizing: border-box;
-    }
     body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f9f4;
+      color: #1b3b2f;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--cinza-claro);
-      color: var(--verde-escuro);
-      line-height: 1.6;
+      padding: 0;
     }
-    header {
-      background-color: var(--branco);
-      padding: 20px 40px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    header, footer {
+      background-color: #e3f3e8;
+      padding: 20px;
+      text-align: center;
     }
     nav a {
-      color: var(--verde-escuro);
+      margin: 0 15px;
+      color: #145c43;
       text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      color: var(--verde-medio);
-    }
-    .hero p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-    .hero img {
-      max-width: 320px;
-      margin-top: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    .cta-button {
-      display: inline-block;
-      margin-top: 30px;
-      background-color: var(--verde-medio);
-      color: white;
-      padding: 14px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1em;
       font-weight: bold;
     }
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    section h2 {
-      color: var(--verde-medio);
-      border-left: 5px solid var(--verde-medio);
-      padding-left: 10px;
+    h1 {
+      font-size: 2.5em;
+      color: #145c43;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: #497f63;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+    .cta {
+      display: inline-block;
+      padding: 16px 24px;
+      background-color: #2a7b53;
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .product-section, .ebook-section, .about-section, .testimonials, .contact-section {
+      margin-top: 60px;
+    }
+    .product-block {
+      background-color: #f0f7f2;
+      padding: 20px;
+      border-radius: 8px;
       margin-bottom: 20px;
     }
-    .produtos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-    }
-    .produto {
-      background-color: var(--branco);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-    .produto h4 {
-      margin-bottom: 8px;
-    }
-    .produto a {
-      display: block;
-      color: var(--verde-medio);
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    .sobre {
-      background-color: var(--branco);
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
+    .footer-text {
       font-size: 0.9em;
-      color: #777;
+      color: #666;
+    }
+    a {
+      color: #1b3b2f;
     }
   </style>
 </head>
 <body>
   <header>
+    <h1>Farmácia Natural</h1>
+    <p><strong>Soluções Seguras e Acessíveis para Sua Saúde</strong></p>
     <nav>
-      <strong>Dr. Jônisson Santos</strong>
-      <div>
-        <a href="#ebook">E-book</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="https://www.instagram.com/dr.jonissonsantos" target="_blank">Instagram</a>
-      </div>
+      <a href="#ebook">E-book</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <div class="hero" id="ebook">
-    <h1>Farmácia Natural: Soluções Seguras e Acessíveis para Sua Saúde</h1>
-    <p>Transforme sua saúde com orientação profissional e soluções naturais acessíveis. Um guia essencial para quem busca bem-estar sem excessos de medicamentos.</p>
-    <img src="capa-ebook.jpg" alt="Capa do Ebook Farmácia Natural">
-    <br>
-    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button">QUERO COMPRAR O EBOOK AGORA</a>
+  <div class="container">
+    <section id="ebook" class="ebook-section">
+      <h2>E-book Oficial</h2>
+      <!-- <img src="capa.jpg" alt="Capa do Ebook" style="width: 100%; border-radius: 8px;" /> -->
+      <p>Este guia prático criado por <strong>Dr. Jônisson Santos – Farmacêutico (CRF-PR 42499)</strong> ensina como usar plantas medicinais, óleos essenciais e práticas naturais para combater ansiedade, insônia, má digestão, melhorar a imunidade e muito mais.</p>
+      <ul>
+        <li>✔️ Reduza o uso excessivo de medicamentos</li>
+        <li>✔️ Melhore sono, ansiedade e energia</li>
+        <li>✔️ Soluções naturais com base científica</li>
+      </ul>
+      <a class="cta" href="https://pay.kiwify.com.br/LjBDPKb">Comprar o E-book</a>
+    </section>
+
+    <section id="produtos" class="product-section">
+      <h2>Produtos Recomendados como Farmacêutico</h2>
+      <div class="product-block">
+        <h3>Sono e Relaxamento Natural</h3>
+        <ul>
+          <li>Chá de camomila</li>
+          <li>Chá de melissa, passiflora ou valeriana</li>
+          <li>Difusor + óleos essenciais (lavanda, laranja-doce)</li>
+          <li>Máscara de dormir aromatizada</li>
+          <li>Spray calmante com lavanda</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Imunidade e Resfriados</h3>
+        <ul>
+          <li>Própolis verde em extrato</li>
+          <li>Xarope natural com guaco, mel e própolis</li>
+          <li>Pastilhas de gengibre com mel</li>
+          <li>Vitamina C + zinco</li>
+          <li>Inalador portátil a vapor</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Má Digestão e Gastrite</h3>
+        <ul>
+          <li>Chá de espinheira-santa ou hortelã</li>
+          <li>Cápsulas com boldo e alcachofra</li>
+          <li>Argila branca comestível</li>
+          <li>Kit de chás digestivos</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Energizantes Naturais</h3>
+        <ul>
+          <li>Guaraná em pó</li>
+          <li>Chá verde ou matchá</li>
+          <li>Cápsulas de ginseng ou maca</li>
+          <li>Mix de nuts com cacau e gengibre</li>
+          <li>Suplemento com cogumelos adaptógenos</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Cuidados com Pele e Cabelos</h3>
+        <ul>
+          <li>Óleo de coco prensado a frio</li>
+          <li>Argila verde e branca</li>
+          <li>Sabonete de barbatimão ou aroeira</li>
+          <li>Shampoo natural com ervas</li>
+          <li>Óleo de rícino vegetal</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Para o Dia a Dia</h3>
+        <ul>
+          <li>Cápsulas multiextrato de plantas</li>
+          <li>Livro sobre plantas medicinais</li>
+          <li>Infusor de chá</li>
+          <li>Kit de vidros âmbar</li>
+          <li>Organizador semanal de chás</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+      <h2>Sobre o Autor</h2>
+      <p><strong>Dr. Jônisson Santos – Farmacêutico | CRF-PR 42499</strong></p>
+      <p>Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni) e habilitado em vacinação, ele é, acima de tudo, um aliado de quem busca cuidados naturais, seguros e eficazes.</p>
+      <p>Com anos de experiência em drogarias, viu de perto a realidade de quem recorre a muitos medicamentos e deseja soluções completas e duradouras. Sua missão é traduzir a ciência em linguagem simples e prática, resgatando o poder da natureza como aliada da saúde.</p>
+      <p>Este e-book é só o começo: cada página representa uma nova forma de enxergar o cuidado — mais humano, acessível e consciente.</p>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <h2>Contato</h2>
+      <p><a href="https://www.instagram.com/dr.jonissonsantos" target="_blank">Instagram: @dr.jonissonsantos</a></p>
+      <p><a href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Fale comigo pelo WhatsApp</a></p>
+    </section>
   </div>
 
-  <section id="produtos">
-    <h2>Produtos que Recomendo como Farmacêutico</h2>
-
-    <div class="produtos-grid">
-      <div class="produto">
-        <h4>Sono e Relaxamento</h4>
-        <p>Difusor de óleos essenciais, sprays calmantes, chás calmantes.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-      <div class="produto">
-        <h4>Imunidade e Resfriados</h4>
-        <p>Própolis, xarope natural, pastilhas de gengibre, vitamina C.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-      <div class="produto">
-        <h4>Má Digestão e Gastrite</h4>
-        <p>Chás digestivos, cápsulas naturais, argila branca comestível.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-      <div class="produto">
-        <h4>Energizantes Naturais</h4>
-        <p>Guaraná, chá verde, ginseng, maca peruana, adaptógenos.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-      <div class="produto">
-        <h4>Cuidados com Pele e Cabelos</h4>
-        <p>Óleo de coco, argilas, shampoo sem sulfato, óleo de rícino.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-      <div class="produto">
-        <h4>Geral – Saúde Natural</h4>
-        <p>Kits organizadores, livros, infusores, cápsulas multiextrato.</p>
-        <a href="#">Ver produtos</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="sobre">
-    <h2>Sobre o Autor</h2>
-    <div class="sobre">
-      <p>Dr. Jônisson Santos é mais que farmacêutico — é um apaixonado por saúde real. Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni) e habilitado em vacinação, ele é, acima de tudo, um aliado de quem busca cuidados naturais, seguros e eficazes.</p>
-
-      <p>Anos de experiência em drogarias mostraram de perto a realidade de quem muitas vezes recorre a remédio atrás de remédio para aliviar sintomas, mas quer soluções mais completas e duradouras. Dessa escuta diária nasceu sua missão: traduzir a ciência em linguagem simples e prática, resgatando o poder da natureza como aliada da saúde.</p>
-
-      <p>Com base em sua formação sólida, prática no balcão e paixão por pesquisa, Dr. Jônisson ajuda milhares de pessoas a criar sua própria farmácia natural em casa, sempre com orientação responsável. Este e-book é só o começo: cada página traz não só receitas, mas uma nova forma de ver a saúde — mais humana, consciente e acessível.</p>
-
-      <p>Bem-vindo(a) a uma comunidade que acredita que se cuidar é um ato de amor — com ciência, natureza e propósito.</p>
-    </div>
-  </section>
-
   <footer>
-    © 2025 - Dr. Jônisson Santos · Farmacêutico CRF-PR 42499 · Todos os direitos reservados.
+    <p class="footer-text">© 2025 - Dr. Jônisson Santos – CRF-PR 42499 | Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
-
-
