@@ -1,197 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmácia Natural | Dr. Jônisson Santos</title>
-  <style>
-    :root {
-      --verde-principal: #2a7b53;
-      --verde-claro: #e9f5ef;
-      --cinza-escuro: #444;
-      --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      font-family: var(--fonte-principal);
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: var(--cinza-escuro);
-    }
-
-    header {
-      background-color: var(--verde-principal);
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background: var(--verde-claro);
-    }
-
-    .hero img {
-      max-width: 300px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: var(--verde-principal);
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-
-    .hero a {
-      background: var(--verde-principal);
-      color: white;
-      padding: 15px 30px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .produto {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      background-color: #f9f9f9;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .produto:hover {
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      transform: translateY(-4px);
-    }
-
-    .produto img {
-      max-width: 100%;
-      border-radius: 6px;
-    }
-
-    .produto a {
-      text-decoration: none;
-      color: var(--verde-principal);
-      font-weight: 600;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .sobre {
-      background-color: #f5f5f5;
-      padding: 60px 20px;
-    }
-
-    .sobre p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>Farmácia Natural - Dr. Jônisson Santos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
-    <h1>Dr. Jônisson Santos</h1>
-    <nav>
-      <a href="#ebook">E-book</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="https://www.instagram.com/dr.jonissonsantos" target="_blank">Instagram</a>
+    <nav class="navbar">
+      <div class="logo">Farmácia Natural</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#ebook">Meu Ebook</a></li>
+        <li><a href="#produtos">Recomendações Profissionais</a></li>
+        <li><a href="#sobre">Sobre o Dr. Jônisson Santos</a></li>
+        <li><a href="#contato">Fale Comigo</a></li>
+      </ul>
+      <a class="instagram-icon" href="https://www.instagram.com/dr.jonissonsantos" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24">
+      </a>
     </nav>
   </header>
 
-  <div class="hero" id="ebook">
-    <img src="mockup-novo-da-capa.jpg" alt="Capa do Ebook" />
-    <h2>Farmácia Natural: Soluções Seguras e Acessíveis para Sua Saúde</h2>
-    <p>A força da natureza para cuidar de você — com soluções naturais, acessíveis e cientificamente orientadas.</p>
-    <a href="https://pay.kiwify.com.br/LjBDPKb">Adquirir o E-book</a>
-  </div>
+  <main class="container">
+    <section id="inicio">
+      <h1>Saúde Natural com Ciência e Propósito</h1>
+      <p>Transforme sua rotina com cuidados naturais indicados por um profissional de confiança.</p>
+    </section>
 
-  <section id="produtos">
-    <h2>Produtos Recomendados</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/51o4mfZLAlL._AC_SX679_.jpg" alt="Difusor de Aromas" />
-        <p>Difusor de Aromas com LED</p>
-        <a href="https://a.co/d/cCayXnJ" target="_blank">Ver produto</a>
-      </div>
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/51KhM4Oic7L._AC_SX679_.jpg" alt="Garrafa Motivacional" />
-        <p>Garrafa Motivacional 2L</p>
-        <a href="https://a.co/d/54WhEG1" target="_blank">Ver produto</a>
-      </div>
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/61ttVGF9d4L._AC_SX679_.jpg" alt="Óleo Essencial de Lavanda" />
-        <p>Óleo Essencial de Lavanda</p>
-        <a href="https://a.co/d/fVBnaeX" target="_blank">Ver produto</a>
-      </div>
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/81WWfWTfHTL._AC_SX679_.jpg" alt="Chá de Camomila" />
-        <p>Chá de Camomila Orgânico</p>
-        <a href="https://a.co/d/1NFrD98" target="_blank">Ver produto</a>
-      </div>
-    </div>
-  </section>
+    <section id="ebook">
+      <h2>Meu Ebook Exclusivo</h2>
+      <img src="capa-ebook.jpg" alt="Capa do E-book Farmácia Natural" class="ebook-cover"/>
+      <p>Um guia essencial com soluções naturais seguras e acessíveis para sua saúde.</p>
+      <a class="cta-button" href="https://pay.kiwify.com.br/LjBDPKb" target="_blank">Quero Comprar Agora</a>
+      <img src="mockup-triplo.jpg" alt="Mockup do Ebook" class="mockup-img"/>
+    </section>
 
-  <section class="sobre" id="sobre">
-    <h2 style="text-align: center;">Sobre o Autor</h2>
-    <p>
-      Dr. Jônisson Santos é mais que farmacêutico — é um apaixonado por saúde real. Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni) e habilitado em vacinação, ele é, acima de tudo, um aliado de quem busca cuidados naturais, seguros e eficazes.<br><br>
-      Anos de experiência em drogarias mostraram de perto a realidade de quem recorre a remédios para aliviar sintomas, mas quer soluções mais completas e duradouras. Da escuta diária nasceu sua missão: traduzir ciência em linguagem prática, resgatando o poder da natureza como aliada da saúde.<br><br>
-      Este e-book é só o começo: cada página traz não só receitas, mas uma nova forma de ver a saúde — mais humana, consciente e acessível.
-    </p>
-  </section>
+    <section id="produtos">
+      <h2>Produtos que Recomendo como Farmacêutico</h2>
+      <div class="product-block">
+        <h3>Sono e Relaxamento</h3>
+        <ul>
+          <li>Chá de camomila</li>
+          <li>Passiflora, melissa, valeriana</li>
+          <li>Spray de lavanda, máscara de dormir</li>
+        </ul>
+      </div>
+      <div class="product-block">
+        <h3>Imunidade e Resfriados</h3>
+        <ul>
+          <li>Própolis verde</li>
+          <li>Xarope de guaco</li>
+          <li>Pastilhas de gengibre, inalador portátil</li>
+        </ul>
+      </div>
+      <!-- Outros blocos similares podem ser adicionados -->
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Dr. Jônisson Santos</h2>
+      <p>Dr. Jônisson Santos é mais que farmacêutico — é um apaixonado por saúde real. Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni) e habilitado em vacinação, ele é, acima de tudo, um aliado de quem busca cuidados naturais, seguros e eficazes.</p>
+      <p>Com anos de experiência em drogarias, desenvolveu a missão de traduzir a ciência em linguagem prática, ajudando milhares de pessoas a criarem sua própria farmácia natural em casa.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Comigo</h2>
+      <p>Entre em contato pelo Instagram ou envie sugestões para novos conteúdos.</p>
+      <a class="cta-button" href="https://www.instagram.com/dr.jonissonsantos" target="_blank">Ir para o Instagram</a>
+    </section>
+  </main>
 
   <footer>
-    © 2025 - Dr. Jônisson Santos | CRF-PR 42499 — Todos os direitos reservados.
+    <p>© 2025 - Dr. Jônisson Santos – CRF-PR 42499</p>
   </footer>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>

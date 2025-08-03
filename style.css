@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9f6;
+  color: #1b3b2f;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  background-color: #2e7d5d;
+  padding: 15px 20px;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.ebook-cover, .mockup-img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.cta-button {
+  display: inline-block;
+  background: #2e7d5d;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #dfeee4;
+  color: #555;
+  margin-top: 40px;
+}
+.product-block {
+  margin: 20px 0;
+}
