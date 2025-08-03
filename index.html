@@ -3,167 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmácia Natural - Dr. Jônisson Santos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Dr. Jônisson Santos | Farmácia Natural</title>
   <style>
+    :root {
+      --verde-escuro: #1b3b2f;
+      --verde-claro: #e3f3e8;
+      --verde-medio: #2a7b53;
+      --cinza-claro: #f5f9f4;
+      --branco: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f2f5f1;
-      color: #1a3e2e;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cinza-claro);
+      color: var(--verde-escuro);
+      line-height: 1.6;
     }
-
     header {
-      background-color: #145c43;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
+      background-color: var(--branco);
+      padding: 20px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      margin: 0;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
+    nav {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      gap: 30px;
+      flex-wrap: wrap;
     }
-
-    .left, .right {
-      flex: 1;
-      min-width: 300px;
+    nav a {
+      color: var(--verde-escuro);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
     }
-
-    .left img {
-      width: 100%;
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: var(--verde-medio);
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    .hero img {
+      max-width: 320px;
+      margin-top: 30px;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
-
-    .right h2 {
-      font-size: 1.8em;
-      color: #145c43;
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 10px;
-    }
-
-    .right p {
-      font-size: 1.05em;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    .cta {
+    .cta-button {
       display: inline-block;
-      padding: 16px 30px;
-      background-color: #2a7b53;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+      margin-top: 30px;
+      background-color: var(--verde-medio);
+      color: white;
+      padding: 14px 30px;
       border-radius: 8px;
+      text-decoration: none;
       font-size: 1.1em;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
     }
-
-    .cta:hover {
-      background-color: #1e5e3f;
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-
-    .benefits {
-      background-color: #e7f4eb;
-      padding: 30px 20px;
-      margin-top: 40px;
-      border-radius: 12px;
-    }
-
-    .benefits h3 {
-      text-align: center;
-      font-size: 1.4em;
+    section h2 {
+      color: var(--verde-medio);
+      border-left: 5px solid var(--verde-medio);
+      padding-left: 10px;
       margin-bottom: 20px;
     }
-
-    .benefits ul {
-      max-width: 600px;
-      margin: auto;
-      padding-left: 20px;
-      font-size: 1.05em;
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
     }
-
-    .benefits li {
-      margin-bottom: 12px;
+    .produto {
+      background-color: var(--branco);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 60px;
-      padding-bottom: 40px;
+    .produto h4 {
+      margin-bottom: 8px;
     }
-
-    .footer a {
-      color: #145c43;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    .mockup-extra {
+    .produto a {
       display: block;
-      margin: 60px auto 20px;
-      max-width: 400px;
-      border-radius: 12px;
+      color: var(--verde-medio);
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
     }
-
-    @media(max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
+    .sobre {
+      background-color: var(--branco);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Farmácia Natural</h1>
-    <p style="margin-top: 8px;">Soluções Seguras e Acessíveis para Sua Saúde</p>
+    <nav>
+      <strong>Dr. Jônisson Santos</strong>
+      <div>
+        <a href="#ebook">E-book</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="https://www.instagram.com/dr.jonissonsantos" target="_blank">Instagram</a>
+      </div>
+    </nav>
   </header>
 
-  <section class="container">
-    <div class="left">
-      <img src="capa-ebook.jpg" alt="Capa do ebook Farmácia Natural">
-    </div>
-    <div class="right">
-      <h2>A força da natureza para cuidar de você</h2>
-      <p>Este guia prático, criado pelo <strong>Dr. Jônisson Santos – Farmacêutico (CRF-PR 42499)</strong>, reúne soluções naturais e científicas para ansiedade, insônia, má digestão, imunidade e muito mais.</p>
-      <p>Aprenda a usar plantas medicinais, óleos essenciais e técnicas simples de autocuidado para transformar sua saúde de forma natural, segura e acessível — tudo com orientação profissional.</p>
-      <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta" target="_blank">🛒 QUERO COMPRAR O EBOOK AGORA</a>
+  <div class="hero" id="ebook">
+    <h1>Farmácia Natural: Soluções Seguras e Acessíveis para Sua Saúde</h1>
+    <p>Transforme sua saúde com orientação profissional e soluções naturais acessíveis. Um guia essencial para quem busca bem-estar sem excessos de medicamentos.</p>
+    <img src="capa-ebook.jpg" alt="Capa do Ebook Farmácia Natural">
+    <br>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button">QUERO COMPRAR O EBOOK AGORA</a>
+  </div>
+
+  <section id="produtos">
+    <h2>Produtos que Recomendo como Farmacêutico</h2>
+
+    <div class="produtos-grid">
+      <div class="produto">
+        <h4>Sono e Relaxamento</h4>
+        <p>Difusor de óleos essenciais, sprays calmantes, chás calmantes.</p>
+        <a href="#">Ver produtos</a>
+      </div>
+      <div class="produto">
+        <h4>Imunidade e Resfriados</h4>
+        <p>Própolis, xarope natural, pastilhas de gengibre, vitamina C.</p>
+        <a href="#">Ver produtos</a>
+      </div>
+      <div class="produto">
+        <h4>Má Digestão e Gastrite</h4>
+        <p>Chás digestivos, cápsulas naturais, argila branca comestível.</p>
+        <a href="#">Ver produtos</a>
+      </div>
+      <div class="produto">
+        <h4>Energizantes Naturais</h4>
+        <p>Guaraná, chá verde, ginseng, maca peruana, adaptógenos.</p>
+        <a href="#">Ver produtos</a>
+      </div>
+      <div class="produto">
+        <h4>Cuidados com Pele e Cabelos</h4>
+        <p>Óleo de coco, argilas, shampoo sem sulfato, óleo de rícino.</p>
+        <a href="#">Ver produtos</a>
+      </div>
+      <div class="produto">
+        <h4>Geral – Saúde Natural</h4>
+        <p>Kits organizadores, livros, infusores, cápsulas multiextrato.</p>
+        <a href="#">Ver produtos</a>
+      </div>
     </div>
   </section>
 
-  <section class="benefits">
-    <h3>🌿 Benefícios do E-book:</h3>
-    <ul>
-      <li>✔️ Reduza o uso excessivo de medicamentos</li>
-      <li>✔️ Melhore seu sono, ansiedade e energia</li>
-      <li>✔️ Tenha soluções naturais acessíveis em casa</li>
-      <li>✔️ Conte com orientação de um farmacêutico</li>
-    </ul>
+  <section id="sobre">
+    <h2>Sobre o Autor</h2>
+    <div class="sobre">
+      <p>Dr. Jônisson Santos é mais que farmacêutico — é um apaixonado por saúde real. Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni) e habilitado em vacinação, ele é, acima de tudo, um aliado de quem busca cuidados naturais, seguros e eficazes.</p>
+
+      <p>Anos de experiência em drogarias mostraram de perto a realidade de quem muitas vezes recorre a remédio atrás de remédio para aliviar sintomas, mas quer soluções mais completas e duradouras. Dessa escuta diária nasceu sua missão: traduzir a ciência em linguagem simples e prática, resgatando o poder da natureza como aliada da saúde.</p>
+
+      <p>Com base em sua formação sólida, prática no balcão e paixão por pesquisa, Dr. Jônisson ajuda milhares de pessoas a criar sua própria farmácia natural em casa, sempre com orientação responsável. Este e-book é só o começo: cada página traz não só receitas, mas uma nova forma de ver a saúde — mais humana, consciente e acessível.</p>
+
+      <p>Bem-vindo(a) a uma comunidade que acredita que se cuidar é um ato de amor — com ciência, natureza e propósito.</p>
+    </div>
   </section>
 
-  <img src="mockup-triplo.jpg" class="mockup-extra" alt="Mockup do ebook Farmácia Natural">
+  <footer>
+    © 2025 - Dr. Jônisson Santos · Farmacêutico CRF-PR 42499 · Todos os direitos reservados.
+  </footer>
+</body>
+</html>
 
-  <div class="footer">
-    © 2025 - Dr. Jônisson Santos – CRF-PR 42499<br>
-    <a href="https://www.instagram.com/dr.jonissonsantos" target="_bl_
 
