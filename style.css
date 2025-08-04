@@ -1,8 +1,112 @@
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* Adicional: responsividade, layout colunas, etc. */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4fdf9;
+  color: #1a3c34;
+  line-height: 1.6;
+}
+.header {
+  background: #1a3c34;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background: #d6f5e3;
+  text-align: center;
+}
+.hero-img {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+}
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #1a3c34;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.ebook-section, .produtos-section, .sobre-section, .contato-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.ebook-img {
+  max-width: 400px;
+  margin: 20px 0;
+}
+.btn-buy, .btn-wpp {
+  padding: 10px 20px;
+  background: #1a3c34;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.produtos-section .produto {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+}
+.produtos-section img {
+  width: 100%;
+  border-radius: 6px;
+}
+.foto-perfil {
+  max-width: 200px;
+  border-radius: 100%;
+  margin-top: 15px;
+}
+.footer {
+  background: #1a3c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero-img {
+    margin-right: 40px;
+  }
+}
