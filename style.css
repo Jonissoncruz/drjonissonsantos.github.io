@@ -1,112 +1,99 @@
 
-* {
-  box-sizing: border-box;
+body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4fdf9;
-  color: #1a3c34;
   line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
-.header {
-  background: #1a3c34;
-  color: white;
-  padding: 20px;
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header.header {
+  background: #f4f4f4;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
-.navbar {
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.nav-links {
-  display: flex;
-  gap: 20px;
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
 }
-.nav-links li {
-  list-style: none;
-}
-.nav-links a {
+
+.cta {
+  background-color: #00796b;
   color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
+
 .hero {
+  background: #e0f2f1;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre-content,
+.produtos-grid,
+.depoimentos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
-  padding: 60px 20px;
-  background: #d6f5e3;
-  text-align: center;
 }
-.hero-img {
-  max-width: 250px;
-  margin-bottom: 20px;
+
+.sobre-img img,
+.produto img {
+  max-width: 100%;
+  height: auto;
 }
-.hero-text h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.hero-text p {
-  font-size: 1.1rem;
-}
-.btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #1a3c34;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-}
-.ebook-section, .produtos-section, .sobre-section, .contato-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-.ebook-img {
-  max-width: 400px;
-  margin: 20px 0;
-}
-.btn-buy, .btn-wpp {
-  padding: 10px 20px;
-  background: #1a3c34;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-.produtos-section .produto {
-  display: inline-block;
-  width: 200px;
-  margin: 15px;
-}
-.produtos-section img {
-  width: 100%;
-  border-radius: 6px;
-}
-.foto-perfil {
-  max-width: 200px;
-  border-radius: 100%;
-  margin-top: 15px;
-}
-.footer {
-  background: #1a3c34;
+
+.footer-content {
+  background: #333;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 2rem 0;
 }
-@media (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    justify-content: center;
+
+@media (max-width: 768px) {
+  .header-content, .hero, .sobre-content {
+    flex-direction: column;
+    text-align: center;
   }
-  .hero-img {
-    margin-right: 40px;
+
+  .nav {
+    margin-top: 1rem;
   }
 }
