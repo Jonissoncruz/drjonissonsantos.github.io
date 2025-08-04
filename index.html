@@ -1,79 +1,490 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><!-- Dentro da tag <head> -->
-<link rel="stylesheet" href="style.css" />
-
-<!-- Antes do fechamento da tag </body> -->
-<script src="script.js"></script>
-
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmácia Natural | Dr. Jônisson Santos</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <title>Farmácia Natural - Dr. Jônisson Santos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1b3b2f;
+      background-color: #f5f9f4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #2a7b53;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #2a7b53;
+      font-weight: 600;
+    }
+
+    .hero {
+      background-color: #eef7f1;
+      padding: 120px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.4em;
+      color: #145c43;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #2a7b53;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about img {
+      max-width: 180px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .about h2 {
+      font-size: 1.8em;
+      color: #145c43;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 800px;
+      font-size: 1.05em;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        padding: 100px 20px 40px;
+      }
+    }
+  </style>
 </head>
-<body><!-- Dentro da tag <head> -->
-<link rel="stylesheet" href="style.css" />
+<body>
 
-<!-- Antes do fechamento da tag </body> -->
-<script src="script.js"></script>
-
-  <!-- Conteúdo do site começa aqui -->
-
-  <header class="header">
-    <div class="logo">Dr. Jônisson Santos</div>
-    <nav class="menu">
-      <a href="#inicio">Início</a>
-      <a href="#ebook">Meu Ebook</a>
-      <a href="#produtos">Recomendações Profissionais</a>
-      <a href="#sobre">Sobre o Autor</a>
-      <a href="#contato">Fale Comigo</a>
-    </nav>
-    <a href="https://wa.me/5571991318546" class="whatsapp-link">WhatsApp</a>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">Dr. Jônisson Santos</div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#ebook">Meu Ebook</a></li>
+          <li><a href="#produtos">Recomendações</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Fale Comigo</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="inicio" class="hero">
+  <!-- HERO -->
+  <section class="hero" id="inicio">
     <img src="mockup-triplo.jpg" alt="Mockup do Ebook">
-    <h1>Farmácia Natural: Soluções Seguras e Acessíveis para Sua Saúde</h1>
-    <p>A forma mais natural de cuidar da sua saúde todos os dias.</p>
-    <a href="#ebook" class="cta">Quero cuidar da minha saúde naturalmente</a>
+    <h1>Transforme sua saúde com soluções naturais</h1>
+    <p>Receba agora mesmo o e-book que vai revolucionar sua forma de cuidar do corpo e da mente com orientações 100% profissionais e seguras.</p>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button">Quero cuidar da minha saúde naturalmente</a>
   </section>
 
-  <section id="ebook" class="ebook">
-    <h2>Conheça o E-book</h2>
-    <img src="capa-ebook.jpg" alt="Capa do Ebook">
-    <p>De <s>R$67,00</s> por apenas <strong>R$47,00</strong></p>
-    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta">Comprar agora com 7 dias de garantia</a>
-  </section>
-
-  <section id="produtos" class="produtos">
-    <h2>Produtos que Recomendo como Farmacêutico</h2>
-    <div class="galeria">
-      <!-- Exemplo de produto -->
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/61Ykg2-8VKL._AC_SX679_.jpg" alt="Chá de camomila">
-        <p>Chá de Camomila</p>
-        <a href="https://a.co/d/cCayXnJ" target="_blank">Comprar agora</a>
-      </div>
-      <!-- Adicione mais produtos aqui -->
-    </div>
-  </section>
-
-  <section id="sobre" class="sobre">
+  <!-- SOBRE O AUTOR -->
+  <section class="section about" id="sobre">
+    <img src="foto-oficial.jpg" alt="Foto do Dr. Jônisson Santos">
     <h2>Sobre o Dr. Jônisson Santos</h2>
-    <img src="foto-oficial.jpg" alt="Foto do Dr. Jônisson">
-    <p>Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni), habilitado em vacinação. Atua com foco em soluções naturais, seguras e acessíveis. Este e-book é parte de uma missão maior: ajudar você a conquistar uma vida mais saudável e consciente.</p>
+    <p>
+      Farmacêutico (CRF-PR 42499), pós-graduado em Farmácia Clínica e Hospitalar, habilitado em vacinação e apaixonado por saúde natural. 
+      Após anos de experiência em drogarias e no atendimento direto ao público, compreendeu que muitos procuram alternativas mais seguras e naturais para o cuidado com a saúde. 
+      Por isso, criou este projeto para ensinar de forma simples, prática e com respaldo científico como cada pessoa pode montar sua própria farmácia natural em casa.
+    </p>
+  </section>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmácia Natural - Dr. Jônisson Santos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #1b3b2f;
+      background-color: #f5f9f4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #2a7b53;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #2a7b53;
+      font-weight: 600;
+    }
+
+    .hero {
+      background-color: #eef7f1;
+      padding: 120px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.4em;
+      color: #145c43;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #2a7b53;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about img {
+      max-width: 180px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .about h2 {
+      font-size: 1.8em;
+      color: #145c43;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 800px;
+      font-size: 1.05em;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        padding: 100px 20px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">Dr. Jônisson Santos</div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#ebook">Meu Ebook</a></li>
+          <li><a href="#produtos">Recomendações</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Fale Comigo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <img src="mockup-triplo.jpg" alt="Mockup do Ebook">
+    <h1>Transforme sua saúde com soluções naturais</h1>
+    <p>Receba agora mesmo o e-book que vai revolucionar sua forma de cuidar do corpo e da mente com orientações 100% profissionais e seguras.</p>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button">Quero cuidar da minha saúde naturalmente</a>
   </section>
 
-  <section id="contato" class="contato">
-    <h2>Fale Comigo</h2>
-    <p>Envie uma mensagem direta pelo <a href="https://wa.me/5571991318546">WhatsApp</a> ou acesse meu <a href="https://www.instagram.com/dr.jonissonsantos">Instagram</a>.</p>
+  <!-- SOBRE O AUTOR -->
+  <section class="section about" id="sobre">
+    <img src="foto-oficial.jpg" alt="Foto do Dr. Jônisson Santos">
+    <h2>Sobre o Dr. Jônisson Santos</h2>
+    <p>
+      Farmacêutico (CRF-PR 42499), pós-graduado em Farmácia Clínica e Hospitalar, habilitado em vacinação e apaixonado por saúde natural. 
+      Após anos de experiência em drogarias e no atendimento direto ao público, compreendeu que muitos procuram alternativas mais seguras e naturais para o cuidado com a saúde. 
+      Por isso, criou este projeto para ensinar de forma simples, prática e com respaldo científico como cada pessoa pode montar sua própria farmácia natural em casa.
+    </p>
+  </section>
+  <!-- EBOOK -->
+  <section class="section" id="ebook" style="background-color: #ffffff; text-align: center;">
+    <h2 style="font-size: 2em; color: #145c43; margin-bottom: 20px;">Conheça o Ebook Farmácia Natural</h2>
+    <img src="capa-ebook.jpg" alt="Capa do Ebook" style="max-width: 280px; border-radius: 12px; margin-bottom: 20px;">
+    <p style="max-width: 700px; margin: auto; font-size: 1.1em; color: #333;">Este guia completo reúne soluções naturais e científicas para cuidar da sua saúde de forma prática, segura e eficaz — direto de um profissional da saúde.</p>
+    <ul style="list-style: none; margin: 30px auto 20px; padding: 0; max-width: 700px; text-align: left; font-size: 1em; color: #333;">
+      <li>✔️ Aprenda a usar plantas medicinais, óleos essenciais e técnicas de autocuidado</li>
+      <li>✔️ Diminua o uso excessivo de remédios convencionais</li>
+      <li>✔️ Tenha sempre à mão soluções naturais acessíveis</li>
+      <li>✔️ Conte com a orientação de um farmacêutico experiente</li>
+    </ul>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button" style="margin-top: 20px;">Adquirir agora por apenas R$ 47</a>
+    <p style="font-size: 0.9em; color: #777; margin-top: 10px;">Garantia de 7 dias | Suporte via WhatsApp | Material 100% Digital</p>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 - Dr. Jônisson Santos | Farmacêutico - CRF-PR 42499</p>
-    <p>Site 100% seguro | Garantia de 7 dias | Suporte direto</p>
-  </footer>
+  <!-- PRODUTOS RECOMENDADOS -->
+  <section class="section" id="produtos" style="background-color: #eef7f1;">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 2em; color: #145c43; margin-bottom: 40px;">Produtos que Recomendo como Farmacêutico</h2>
 
-</body>
-</html>
+      <!-- Categoria: Sono e Relaxamento -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Sono e Relaxamento Natural</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Chá de camomila:</strong> ideal para noites tranquilas.</li>
+          <li><strong>Chá de melissa, passiflora ou valeriana:</strong> calmantes naturais suaves.</li>
+          <li><strong>Difusor de aromas + óleos essenciais:</strong> lavanda e laranja-doce são os favoritos.</li>
+          <li><strong>Máscara para dormir com aroma:</strong> relaxa e bloqueia a luz.</li>
+          <li><strong>Spray calmante para travesseiro:</strong> sensação de conforto instantânea.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Imunidade -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Imunidade e Resfriados</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Própolis verde:</strong> poderoso antiviral e antibacteriano natural.</li>
+          <li><strong>Xarope natural:</strong> guaco, mel e própolis.</li>
+          <li><strong>Pastilhas de gengibre com mel:</strong> alívio rápido da garganta.</li>
+          <li><strong>Vitamina C + zinco:</strong> fortalecem a imunidade.</li>
+          <li><strong>Inalador portátil:</strong> útil para descongestionar naturalmente.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Digestão -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Má Digestão e Gastrite</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Chá de espinheira-santa ou hortelã:</strong> alívio natural da gastrite.</li>
+          <li><strong>Cápsulas naturais com boldo e alcachofra:</strong> estimulam o fígado e digestão.</li>
+          <li><strong>Argila branca comestível:</strong> combate azia e refluxo.</li>
+          <li><strong>Kit de chás digestivos:</strong> como erva-doce, gengibre, hortelã.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Energia Natural -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Energizantes Naturais</h3>
+        <ul style="marg
+  <!-- EBOOK -->
+  <section class="section" id="ebook" style="background-color: #ffffff; text-align: center;">
+    <h2 style="font-size: 2em; color: #145c43; margin-bottom: 20px;">Conheça o Ebook Farmácia Natural</h2>
+    <img src="capa-ebook.jpg" alt="Capa do Ebook" style="max-width: 280px; border-radius: 12px; margin-bottom: 20px;">
+    <p style="max-width: 700px; margin: auto; font-size: 1.1em; color: #333;">Este guia completo reúne soluções naturais e científicas para cuidar da sua saúde de forma prática, segura e eficaz — direto de um profissional da saúde.</p>
+    <ul style="list-style: none; margin: 30px auto 20px; padding: 0; max-width: 700px; text-align: left; font-size: 1em; color: #333;">
+      <li>✔️ Aprenda a usar plantas medicinais, óleos essenciais e técnicas de autocuidado</li>
+      <li>✔️ Diminua o uso excessivo de remédios convencionais</li>
+      <li>✔️ Tenha sempre à mão soluções naturais acessíveis</li>
+      <li>✔️ Conte com a orientação de um farmacêutico experiente</li>
+    </ul>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta-button" style="margin-top: 20px;">Adquirir agora por apenas R$ 47</a>
+    <p style="font-size: 0.9em; color: #777; margin-top: 10px;">Garantia de 7 dias | Suporte via WhatsApp | Material 100% Digital</p>
+  </section>
+
+  <!-- PRODUTOS RECOMENDADOS -->
+  <section class="section" id="produtos" style="background-color: #eef7f1;">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 2em; color: #145c43; margin-bottom: 40px;">Produtos que Recomendo como Farmacêutico</h2>
+
+      <!-- Categoria: Sono e Relaxamento -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Sono e Relaxamento Natural</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Chá de camomila:</strong> ideal para noites tranquilas.</li>
+          <li><strong>Chá de melissa, passiflora ou valeriana:</strong> calmantes naturais suaves.</li>
+          <li><strong>Difusor de aromas + óleos essenciais:</strong> lavanda e laranja-doce são os favoritos.</li>
+          <li><strong>Máscara para dormir com aroma:</strong> relaxa e bloqueia a luz.</li>
+          <li><strong>Spray calmante para travesseiro:</strong> sensação de conforto instantânea.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Imunidade -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Imunidade e Resfriados</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Própolis verde:</strong> poderoso antiviral e antibacteriano natural.</li>
+          <li><strong>Xarope natural:</strong> guaco, mel e própolis.</li>
+          <li><strong>Pastilhas de gengibre com mel:</strong> alívio rápido da garganta.</li>
+          <li><strong>Vitamina C + zinco:</strong> fortalecem a imunidade.</li>
+          <li><strong>Inalador portátil:</strong> útil para descongestionar naturalmente.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Digestão -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Má Digestão e Gastrite</h3>
+        <ul style="margin-top: 10px; margin-left: 20px;">
+          <li><strong>Chá de espinheira-santa ou hortelã:</strong> alívio natural da gastrite.</li>
+          <li><strong>Cápsulas naturais com boldo e alcachofra:</strong> estimulam o fígado e digestão.</li>
+          <li><strong>Argila branca comestível:</strong> combate azia e refluxo.</li>
+          <li><strong>Kit de chás digestivos:</strong> como erva-doce, gengibre, hortelã.</li>
+        </ul>
+      </div>
+
+      <!-- Categoria: Energia Natural -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #2a7b53; font-size: 1.5em;">Energizantes Naturais</h3>
+        <ul style="marg
+
