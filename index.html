@@ -1,78 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmácia Natural – Dr. Jônisson Santos</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Farmácia Natural | Dr. Jônisson Santos</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Conteúdo do site começa aqui -->
+
   <header class="header">
-    <nav class="navbar">
-      <h1 class="logo">Dr. Jônisson Santos</h1>
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#ebook">Meu Ebook</a></li>
-        <li><a href="#produtos">Recomendações</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Fale Comigo</a></li>
-      </ul>
+    <div class="logo">Dr. Jônisson Santos</div>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#ebook">Meu Ebook</a>
+      <a href="#produtos">Recomendações Profissionais</a>
+      <a href="#sobre">Sobre o Autor</a>
+      <a href="#contato">Fale Comigo</a>
     </nav>
+    <a href="https://wa.me/5571991318546" class="whatsapp-link">WhatsApp</a>
   </header>
 
-  <main class="main-content">
-    <section id="inicio" class="hero">
-      <img src="capa-ebook.jpg" alt="Capa do Ebook" class="hero-img" />
-      <div class="hero-text">
-        <h2>Farmácia Natural</h2>
-        <p>Soluções seguras e acessíveis para sua saúde</p>
-        <a href="#ebook" class="btn">Saiba Mais</a>
-      </div>
-    </section>
+  <section id="inicio" class="hero">
+    <img src="mockup-triplo.jpg" alt="Mockup do Ebook">
+    <h1>Farmácia Natural: Soluções Seguras e Acessíveis para Sua Saúde</h1>
+    <p>A forma mais natural de cuidar da sua saúde todos os dias.</p>
+    <a href="#ebook" class="cta">Quero cuidar da minha saúde naturalmente</a>
+  </section>
 
-    <section id="ebook" class="ebook-section">
-      <h2>Conheça o E-book</h2>
-      <img src="mockup-triplo.jpg" alt="Mockup Triplo" class="ebook-img" />
-      <p>De <s>R$ 67</s> por apenas <strong>R$ 47</strong>. Garantia de 7 dias.</p>
-      <a href="https://pay.kiwify.com.br/LjBDPKb" class="btn-buy">Comprar Agora</a>
-    </section>
+  <section id="ebook" class="ebook">
+    <h2>Conheça o E-book</h2>
+    <img src="capa-ebook.jpg" alt="Capa do Ebook">
+    <p>De <s>R$67,00</s> por apenas <strong>R$47,00</strong></p>
+    <a href="https://pay.kiwify.com.br/LjBDPKb" class="cta">Comprar agora com 7 dias de garantia</a>
+  </section>
 
-    <section id="produtos" class="produtos-section">
-      <h2>Produtos Recomendados</h2>
+  <section id="produtos" class="produtos">
+    <h2>Produtos que Recomendo como Farmacêutico</h2>
+    <div class="galeria">
+      <!-- Exemplo de produto -->
       <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/61K9O6+3MuL._AC_SX679_.jpg" alt="Chá de Camomila" />
+        <img src="https://m.media-amazon.com/images/I/61Ykg2-8VKL._AC_SX679_.jpg" alt="Chá de camomila">
         <p>Chá de Camomila</p>
-        <a href="https://a.co/d/cCayXnJ" target="_blank">Comprar</a>
+        <a href="https://a.co/d/cCayXnJ" target="_blank">Comprar agora</a>
       </div>
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/61ykkbgDOQL._AC_SX679_.jpg" alt="Difusor Aromático" />
-        <p>Difusor de Aromas</p>
-        <a href="https://a.co/d/fVBnaeX" target="_blank">Comprar</a>
-      </div>
-      <div class="produto">
-        <img src="https://m.media-amazon.com/images/I/61pUkTh0ZOL._AC_SX679_.jpg" alt="Garrafa Motivacional" />
-        <p>Garrafa Motivacional</p>
-        <a href="https://a.co/d/fnguweY" target="_blank">Comprar</a>
-      </div>
-    </section>
+      <!-- Adicione mais produtos aqui -->
+    </div>
+  </section>
 
-    <section id="sobre" class="sobre-section">
-      <h2>Sobre o Dr. Jônisson Santos</h2>
-      <img src="foto-oficial.jpg" alt="Foto oficial do Dr. Jônisson" class="foto-perfil" />
-      <p>Farmacêutico (CRF-PR 42499), especialista em Farmácia Clínica e Hospitalar (UNIFTC Salvador-BA). Apaixonado por saúde natural. Ajuda milhares de pessoas a viverem com mais bem-estar.</p>
-    </section>
+  <section id="sobre" class="sobre">
+    <h2>Sobre o Dr. Jônisson Santos</h2>
+    <img src="foto-oficial.jpg" alt="Foto do Dr. Jônisson">
+    <p>Formado em Farmácia (UNIFTC Salvador-BA), pós-graduado em Farmácia Clínica e Hospitalar (Faveni), habilitado em vacinação. Atua com foco em soluções naturais, seguras e acessíveis. Este e-book é parte de uma missão maior: ajudar você a conquistar uma vida mais saudável e consciente.</p>
+  </section>
 
-    <section id="contato" class="contato-section">
-      <h2>Fale Comigo</h2>
-      <p>Dúvidas, suporte ou parcerias? Entre em contato diretamente:</p>
-      <a href="https://wa.me/5571991318546" class="btn-wpp" target="_blank">Conversar via WhatsApp</a>
-    </section>
-  </main>
+  <section id="contato" class="contato">
+    <h2>Fale Comigo</h2>
+    <p>Envie uma mensagem direta pelo <a href="https://wa.me/5571991318546">WhatsApp</a> ou acesse meu <a href="https://www.instagram.com/dr.jonissonsantos">Instagram</a>.</p>
+  </section>
 
   <footer class="footer">
-    <p>© 2025 - Dr. Jônisson Santos | Todos os direitos reservados.</p>
+    <p>&copy; 2025 - Dr. Jônisson Santos | Farmacêutico - CRF-PR 42499</p>
+    <p>Site 100% seguro | Garantia de 7 dias | Suporte direto</p>
   </footer>
+
 </body>
 </html>
